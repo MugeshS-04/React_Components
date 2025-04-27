@@ -6,6 +6,7 @@ import search_light from '../../assets/search-w.png'
 import search_dark from '../../assets/search-b.png'
 import toogle_dark from '../../assets/day.png'
 import toogle_light from '../../assets/night.png'
+import { useState } from 'react'
 
 const Navbar = ({theme, settheme}) => {
   const toggle_mode = () => {
@@ -19,7 +20,7 @@ const Navbar = ({theme, settheme}) => {
   }
   return (
     <div className='navbar'>
-      <img src={logo_light} alt='' className='logo'/>
+      <img src={theme === "light" ? logo_light : logo_dark } alt='' className='logo'/>
       <ul>
           <li>Home</li>
           <li>Products</li>
@@ -29,10 +30,10 @@ const Navbar = ({theme, settheme}) => {
 
       <div className='searchbox'>
         <input type='text' placeholder='search'></input>
-        <img src={search_light} alt=''/>
+        <img src={theme === "light" ? search_light : search_dark } alt=''/>
       </div>
 
-      <img onClick={() => {toggle_mode()}}src={toogle_dark} alt='' className='toggle-icon'/>
+      <img onClick={() => {toggle_mode()}}src={theme === "light" ? toogle_light : toogle_dark} alt='' className='toggle-icon'/>
     </div>
   )
 }
