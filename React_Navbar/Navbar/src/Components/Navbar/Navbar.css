@@ -51,7 +51,16 @@ li {
     background-color: transparent;
     border: 0;
     outline: 0;
-    color: black;
+    color: #fff;
     font-size: 18px;
     max-width: 200px;
+}
+
+.searchbox input::placeholder {
+    color: #fff;
+}
+
+.searchbox img {
+    width: 20px;
+    cursor: pointer;
 }

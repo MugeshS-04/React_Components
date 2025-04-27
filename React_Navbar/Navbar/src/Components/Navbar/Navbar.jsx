@@ -20,7 +20,7 @@ const Navbar = () => {
 
       <div className='searchbox'>
         <input type='text' placeholder='search'></input>
-        <img src={search_dark} alt=''/>
+        <img src={search_light} alt=''/>
       </div>
 
       <img src={toogle_dark} alt='' className='toggle-icon'/>
