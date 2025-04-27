@@ -10,7 +10,7 @@ import toogle_light from '../../assets/night.png'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <img src={logo_light} alt='' className=''/>
+      <img src={logo_light} alt='' className='logo'/>
       <ul>
           <li>Home</li>
           <li>Products</li>
